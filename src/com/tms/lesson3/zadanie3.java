@@ -12,13 +12,13 @@ public class zadanie3 {
             else {
                 nechet = nechet + arr[i];
             }
-            System.out.println("Сумма чисел на четных местах равна = " + chet);
-            System.out.println("Сумма чисел на нечетных местах равно = " + nechet);
-            if (chet > nechet) {
-                System.out.println(chet + " Больше " + nechet + " на : " + (chet - nechet));
-            } else if (chet < nechet) {
-                System.out.println(chet + " Меньше " + nechet + " на : " + (nechet - chet));
-            }
+        }
+        System.out.println("Сумма чисел на четных местах равна = " + chet);
+        System.out.println("Сумма чисел на нечетных местах равно = " + nechet);
+        if (chet > nechet) {
+            System.out.println(chet + " Больше " + nechet + " на : " + (chet - nechet));
+        } else if (chet < nechet) {
+            System.out.println(chet + " Меньше " + nechet + " на : " + (nechet - chet));
         }
     }
 }
