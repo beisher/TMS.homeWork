@@ -3,17 +3,13 @@ package com.tms.lesson4;
 import java.util.Arrays;
 
 class ArraysA {
-    public int[] arr;
+    private int[] arr;
 
     public ArraysA(int[] arrInt) {
         this.arr = arrInt;
     }
 
-    public void arrSort() {
-        arrSortTest();
-    }
-
-    public void arrInt(int value) {
+    public void arrIndex(int value) {
         for (int i = 0; i < arr.length; i++) {
             if (value == arr[i]) {
                 System.out.println(i);
@@ -21,19 +17,21 @@ class ArraysA {
         }
     }
 
-    private void arrSortTest() {
+    private void arrSort() {
         Arrays.sort(arr);
-        String arrString = Arrays.toString(arr);
-        System.out.println(arrString);
 
-        int max = arr[0];
-        for (int i : arr) {
-            if (max < i) {
-                max = i;
-            }
-        }
-        System.out.println(max);
     }
+
+    public void arrMax() {
+        arrSort();
+        System.out.println(arr[arr.length-1]);
+    }
+    public void arrMin() {
+        arrSort();
+        System.out.println(arr[0]);
+    }
+
+
 }
 
 

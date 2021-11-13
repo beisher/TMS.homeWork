@@ -6,8 +6,9 @@ public class mainArrays {
         int a = 15;
         ArraysA arr1 = new ArraysA(arrayMain);
 
-        arr1.arrInt(a);
-        arr1.arrSort();
+        arr1.arrIndex(a);
+        arr1.arrMin();
+        arr1.arrMax();
 
 
     }
