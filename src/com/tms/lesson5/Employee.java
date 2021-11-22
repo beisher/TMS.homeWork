@@ -10,6 +10,26 @@ public abstract class Employee extends Person {
     private int basSalary;
     private int fullSalary;
 
+    public int getExperience() {
+        return experience;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
+    public int getBasSalary() {
+        return basSalary;
+    }
+
+    public void setBasSalary(int basSalary) {
+        this.basSalary = basSalary;
+    }
+
+    public int getFullSalary() {
+        return fullSalary;
+    }
+
     public Employee(String firstName, String secondName, int experience, int basSalary) {
         super(firstName, secondName);
         this.experience = experience;
@@ -26,12 +46,16 @@ public abstract class Employee extends Person {
 
     public int FullSalaryCalculate() {
         this.fullSalary = basSalary * experience * position.getKf();
-        System.out.println("FullSalary : " + fullSalary);
-        return 0;
+        return fullSalary;
     }
 
     public void setFullSalary(int fullSalary) {
         this.fullSalary = fullSalary;
+    }
+
+    public void printAllInfo() {
+        System.out.println(fullSalary);
+        System.out.println(position);
     }
 
     abstract void Position();

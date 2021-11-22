@@ -1,5 +1,7 @@
 package com.tms.lesson5;
 
+import java.util.Arrays;
+
 public class Worker extends Employee{
     public Worker(String firstName, String secondName, int experience, int basSalary) {
         super(firstName, secondName, experience, basSalary);
@@ -8,6 +10,13 @@ public class Worker extends Employee{
     @Override
     void Position() {
         setPosition(POSITION.WORKER);
-        System.out.println("Назначен : " + getPosition());
+    }
+
+    @Override
+    public String toString() {
+        return ": {" +
+                 firstName + '\'' +
+                " " + secondName + '\'' + " Salary " + getFullSalary() + " Experience " + getExperience() + " years " +
+                '}';
     }
 }
