@@ -6,12 +6,11 @@ public class User {
     private int age;
     private Address address;
 
-
     public User(String nameUser, String secondNameUser, int ageUser, String country, String city) {
         this.firstName = nameUser;
         this.secondName = secondNameUser;
         this.age = ageUser;
-        this.address= new Address(country , city);
+        this.address = new Address(country, city);
     }
 
     public void fullNameUser() {
@@ -40,5 +39,4 @@ public class User {
             this.city = city;
         }
     }
-
 }

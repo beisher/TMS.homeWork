@@ -24,17 +24,11 @@ class ArraysA {
 
     public void arrMax() {
         arrSort();
-        System.out.println(arr[arr.length-1]);
+        System.out.println(arr[arr.length - 1]);
     }
+
     public void arrMin() {
         arrSort();
         System.out.println(arr[0]);
     }
-
-
 }
-
-
-
-
-

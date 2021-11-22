@@ -1,6 +1,6 @@
 package com.tms.lesson4;
 
-public class mainSeasons {
+public class MainSeasons {
     public static void main(String[] args) {
         MONTHS month = MONTHS.February;
 
@@ -24,10 +24,6 @@ public class mainSeasons {
             case Novembe:
                 System.out.println("This month is : " + SEASONS.Autumn);
                 break;
-
-
         }
-
-
     }
 }
