@@ -2,24 +2,24 @@ package com.tms.lesson5;
 
 import java.util.Arrays;
 
-public class Director extends Worker {
+public class Director extends Employee {
     public Director(String firstName, String secondName, int experience, int basSalary) {
         super(firstName, secondName, experience, basSalary);
     }
 
-    Worker[] workers = null;
+    Employee[] workers = null;
 
     public void Position() {
         setPosition(POSITION.DIRECTOR);
     }
 
-    public void addWorker(Worker worker) {
+    public void addWorker(Employee employee) {
         if (workers == null) {
-            workers = new Worker[1];
-            workers[0] = worker;
+            workers = new Employee[1];
+            workers[0] = employee;
         } else {
             workers = Arrays.copyOf(workers, workers.length + 1);
-            workers[workers.length - 1] = worker;
+            workers[workers.length - 1] = employee;
         }
     }
 
