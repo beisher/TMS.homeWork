@@ -9,14 +9,13 @@ public class EmployeeFullSearchService implements EmployeeSearch {
     @Override
     public void Search(Employee director, String name) {
         Employee[] worker = director.getWorkers();
-        Employee result = null;
+        EmployeeSearch search = new EmployeeSearchService();
         for (Employee value : worker) {
             if (value.firstName.equals(name)) {
                 System.out.println("Пользователь " + name + " находиться под управлением " + director.firstName + " " + director.secondName);
                 break;
             }
                if (value.getPosition().equals(POSITION.DIRECTOR)) {
-                EmployeeSearch search = new EmployeeSearchService();
                 search.Search(value, name);
             }
         }
