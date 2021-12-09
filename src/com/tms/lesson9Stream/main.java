@@ -65,11 +65,10 @@ public class main {
                 .count();
         System.out.println(count);
 
-        Map <String , Integer> fam1 = families.stream()
+        Map<String, Integer> fam1 = families.stream()
                 .collect(Collectors.toMap(Family::getName, family -> family.getChildren().size()));
 
         System.out.println("-----");
-        fam1.forEach((key , value) -> System.out.println(key + " : " + value)) ;
-
+        fam1.forEach((key, value) -> System.out.println(key + " : " + value));
     }
 }

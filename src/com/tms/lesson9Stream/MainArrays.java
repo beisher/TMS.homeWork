@@ -23,8 +23,5 @@ public class MainArrays {
        Arrays.stream(arr)
                .skip(5)
                .forEach(System.out::println);
-
-
-
     }
 }

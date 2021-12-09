@@ -59,4 +59,3 @@ public class Child {
         return Objects.hash(name, age, sex);
     }
 }
-
